@@ -69,6 +69,15 @@
 				"type" : "slider",
 				"value" : 54
 			},
+			"drawHitboxes" : 
+			{
+				"condition" : "mouseactions.value == true",
+				"index" : 15,
+				"order" : 115,
+				"text" : "Interactive Area",
+				"type" : "bool",
+				"value" : false
+			},
 			"fireworks" : 
 			{
 				"index" : 13,
@@ -206,7 +215,7 @@
 	"tags" : [ "Anime" ],
 	"title" : "Blue Archive | Takanashi Hoshino (Swimsuit)",
 	"type" : "Web",
-	"version" : 4,
+	"version" : 5,
 	"visibility" : "public",
 	"workshopid" : "3498204173",
 	"workshopurl" : "steam://url/CommunityFilePage/3498204173"
