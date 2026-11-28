@@ -43,7 +43,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'Hoshino_swimsuit';
@@ -65,14 +66,15 @@ const AUDIO_DETAIL = [
 				"Wow, this is awesome. This must be paradise."
 			],
 			Chinese: [
-				"呀，不想起来呢……这里简直就是乐园……"
+				"哎呀，这谁顶得住哇……这里简直就是天堂……"
 			],
 			TraditionalChinese: [
 				"哎呀～真讓人心癢難耐呢…這簡直就是樂園…"
 			],
 			Korean: [
 				"이야-. 참을 수가 없네-. 이것이야말로 낙원-."
-			]
+			],
+			Thai: ["ว้าว... ดีจัง สุดยอดไปเลย เหมือนกับเป็นสรวงสวรรค์เลยละ"]
 		}
 	},
 	{
@@ -83,12 +85,12 @@ const AUDIO_DETAIL = [
 				"いやぁ、ここに来られて良かった～最高だねぇ、まるで夢みたいな場所だー…"
 			],
 			English: [
-				"Cool shade... A comfortable breeze... The soft sound of waves...",
-				"Wow...! I'm glad I came here! This place is like a dream. It's the best!"
+				"The cool shade...a pleasant ocean breeze... The soft sound of waves...",
+				"Wow...! I'm glad I came here! It's the best. This place is like a dream..."
 			],
 			Chinese: [
-				"啊啊，凉快的树荫……宜人的海风……有节奏的海浪声……",
-				"呀，能来这里真好~太棒了呢，简直就像梦里才有的地方……"
+				"哇，凉爽的树荫……舒适的海风……还有舒缓的海浪声……",
+				"哎呀，这里真是来对了~太棒了，简直就像做梦一样……"
 			],
 			TraditionalChinese: [
 				"涼爽的樹蔭…舒暢的海風…還有溫柔的浪濤聲…",
@@ -97,7 +99,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"시원한 그늘…. 기분 좋은 바닷바람…. 부드러운 파도 소리….",
 				"이야아~. 역시 오길 잘했네~ 최고야. 마치 꿈 같은 장소야…."
-			]
+			],
+			Thai: ["ร่มเงาไม้เย็นสบาย... ลมทะเลที่พัดเอื่อยๆ... เสียงคลื่นเบาๆ...","อา~ คุ้มกับที่มาจริงๆ น้า~ สุดยอดเลย เหมือนกับสถานที่ ในฝันเลย"]
 		}
 	},
 	{
@@ -108,12 +111,12 @@ const AUDIO_DETAIL = [
 				"あんまり広くはないけど、どう？良い感じだよ～？"
 			],
 			English: [
-				"...Don't just stand there, Sensei. Why don't you lie down?",
-				"There's not much room... Do you mind?"
+				"...Sensei, don't just stand there. Why don't you lie down here?",
+				"There's not much room... But...it's pretty great!"
 			],
 			Chinese: [
-				"……老师也别一直站在那边，也来躺下如何？",
-				"虽然不算太宽敞，但要试试吗？很舒服的哟~？"
+				"唔……老师也别在那里傻站着了，来和我一起躺着吧？",
+				"虽然有点挤，要试试吗？很舒服的哦？"
 			],
 			TraditionalChinese: [
 				"…老師也別光站在那裡，要不要躺下來呀？",
@@ -122,7 +125,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"…선생도 그렇게 서 있지만 말고 누워 보는 게 어때?",
 				"별로 넓진 않지만, 어때? 꽤 괜찮다고~?"
-			]
+			],
+			Thai: ["ครูเองก็อย่ามัวแต่ยืนแบบนั้นสิ ลองมาเอนหลังนอนดูหน่อยมั้ย?","ถึงจะไม่กว้างมากก็เถอะ แต่มาลองนอนดูมั้ย? มันสบายมากเลยนะ~"]
 		}
 	},
 	{
@@ -137,8 +141,8 @@ const AUDIO_DETAIL = [
 				"Well, that's expected."
 			],
 			Chinese: [
-				"唔嘿，原来如此吗……。",
-				"嘛，我猜也是呢。"
+				"呜嘿——就知道你会这么说……",
+				"……也算在我意料之中吧。"
 			],
 			TraditionalChinese: [
 				"唔嘿～原來如此，來這招啊…",
@@ -147,7 +151,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"으헤-. 역시 그렇게 나오는 건가….",
 				"뭐, 왠지 그럴 거라 예상은 했지만서도."
-			]
+			],
+			Thai: ["แฮ่~ เอาอย่างนั้นเหรอ…","ก็นะ ฉันคิดแล้วละ ว่าครูจะพูดแบบนั้น"]
 		}
 	},
 	{
@@ -158,21 +163,22 @@ const AUDIO_DETAIL = [
 				"…えへへ。"
 			],
 			English: [
-				"I don't mind though...",
-				"So, I guess that's why I like you. ...Heeheehee."
+				"I don't mind though... Then again, that's what I like about you.",
+				"...Heeheehee."
 			],
 			Chinese: [
-				"明明没关系的……嘛，这点也不讨厌就是了。",
-				"……诶嘿嘿"
+				"明明没关系的……不过，我也不讨厌老师这一点。",
+				"……诶嘿嘿。"
 			],
 			TraditionalChinese: [
-				"明明不必這樣的說…",
-				"……誒嘿嘿"
+				"明明不必這樣的說…不過，你的那種地方我也不討厭就是了。",
+				"…耶嘿嘿。"
 			],
 			Korean: [
-				"상관없는데….",
-				"그래서 내가 널 좋아하는지"
-			]
+				"상관없는데…. 딱히 그런 부분… 싫어하진 않지만.",
+				"…에헤헤."
+			],
+			Thai: ["แต่ก็ไม่เป็นไรหรอก... ก็เพราะแบบนั้นละมั้ง ฉันเลยชอบครูน่ะ","แหะๆๆ..."]
 		}
 	}
 ]
@@ -283,7 +289,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -453,6 +459,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -466,6 +482,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -475,7 +493,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
